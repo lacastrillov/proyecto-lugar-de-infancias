@@ -17,17 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Show target section
         targetSection.classList.add('active-section');
-        
+
         // Highlight active link
         const activeLink = document.querySelector(`.nav-links a[href="#${targetId}"]`);
         if (activeLink) activeLink.classList.add('active');
-        
+
         // Re-trigger animations manually
         const animatableElements = targetSection.querySelectorAll('.fade-in, .bounce-in');
         animatableElements.forEach(el => {
             el.style.animation = 'none';
             el.offsetHeight; /* trigger reflow */
-            el.style.animation = null; 
+            el.style.animation = null;
         });
 
         // Scroll to top
@@ -35,10 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update History API parameters
         if (updateHistory) {
-            const newUrl = targetId === 'presentacion' 
+            const newUrl = targetId === 'presentacion'
                 ? window.location.pathname // Base URL para presentación
                 : `?seccion=${targetId}`;
-            
+
             window.history.pushState({ section: targetId }, '', newUrl);
         }
     }
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- PDF.js Logic --
-    const pdfUrl = 'documentos/Presentación Nathaly y Adriana.pdf';
+    const pdfUrl = 'documentos/Presentacion_Nathaly_y_Adriana.pdf';
     let pdfDoc = null,
         pageNum = 1,
         pageIsRendering = false,
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Actualizar números en la interfaz
                 document.getElementById('page-num').textContent = num;
-                
+
                 // Habilitar/Deshabilitar botones
                 document.getElementById('prev-page').disabled = num <= 1;
                 document.getElementById('next-page').disabled = num >= pdfDoc.numPages;

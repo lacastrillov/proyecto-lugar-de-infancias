@@ -529,12 +529,23 @@ h3 {
     cursor: pointer;
     font-family: 'Outfit', sans-serif;
     transition: var(--transition);
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn:hover {
     background-color: var(--secondary-color);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--tertiary-color);
+}
+
+.btn-secondary:hover {
+    background-color: #059669;
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
 }
 
 .btn:disabled {

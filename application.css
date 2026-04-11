@@ -490,3 +490,61 @@ h3 {
     .content-block { padding: 1.5rem; }
     .team-card { padding: 2rem 1.5rem; }
 }
+
+/* PDF Viewer / Presentacion */
+.presentation-block {
+    text-align: center;
+}
+
+.pdf-viewer-container {
+    margin-top: 2rem;
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+#pdf-render-canvas {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+.pdf-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
+}
+
+.btn:disabled {
+    background-color: #cbd5e1;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.page-info {
+    font-weight: 600;
+    color: var(--text-secondary);
+}

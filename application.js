@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             window.history.pushState({ section: targetId }, '', newUrl);
         }
+
+        // Close mobile menu if active
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinksContainer = document.querySelector('.nav-links');
+        if (mobileMenu && navLinksContainer) {
+            mobileMenu.classList.remove('is-active');
+            navLinksContainer.classList.remove('mobile-active');
+        }
     }
 
     links.forEach(link => {
@@ -50,6 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
             activateSection(targetId, true);
         });
     });
+
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    if (mobileMenu && navLinksContainer) {
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('is-active');
+            navLinksContainer.classList.toggle('mobile-active');
+        });
+    }
 
     // Handle browser's Forward/Back buttons
     window.addEventListener('popstate', (e) => {

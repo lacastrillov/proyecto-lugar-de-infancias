@@ -1105,6 +1105,276 @@
         justify-content: center;
       }
     }
+
+    /* ================= ESTILOS PARA RECURSOS VISUALES E IMÁGENES ================= */
+    .image-preview-card {
+      background: var(--surface);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image-preview-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--pink-300);
+    }
+
+    .image-thumb-wrapper {
+      position: relative;
+      background: #fdf2f4;
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--pink-100);
+    }
+
+    .image-thumb-wrapper img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+
+    .image-thumb-wrapper.contain-thumb img {
+      object-fit: contain;
+      background: #fff;
+      padding: 0.6rem;
+    }
+
+    .image-thumb-wrapper:hover img {
+      transform: scale(1.04);
+    }
+
+    .image-zoom-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(136, 19, 55, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      backdrop-filter: blur(2px);
+    }
+
+    .image-thumb-wrapper:hover .image-zoom-overlay {
+      opacity: 1;
+    }
+
+    .zoom-badge {
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--rose-deep);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .image-card-body {
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .image-card-body h4 {
+      font-size: 1.05rem;
+      color: var(--rose-deep);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .image-card-body p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 0.9rem;
+      flex: 1;
+    }
+
+    .image-card-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+      margin-top: auto;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--pink-100);
+      flex-wrap: wrap;
+    }
+
+    .btn-zoom {
+      background: var(--pink-100);
+      color: var(--rose-deep);
+      border: none;
+      padding: 0.45rem 0.9rem;
+      border-radius: 10px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .btn-zoom:hover {
+      background: var(--pink-500);
+      color: #fff;
+    }
+
+    .btn-canva-pill {
+      background: linear-gradient(135deg, #00c4cc, #7d2ae8);
+      color: #fff !important;
+      text-decoration: none;
+      padding: 0.45rem 0.9rem;
+      border-radius: 10px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .btn-canva-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(125, 42, 232, 0.35);
+    }
+
+    /* Showcase de Mapa Conceptual */
+    .concept-map-hero {
+      background: #fff;
+      border: 1px solid var(--border-soft);
+      border-radius: 24px;
+      padding: 1.5rem;
+      margin-bottom: 1.8rem;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 1.75rem;
+      align-items: center;
+    }
+
+    @media (max-width: 880px) {
+      .concept-map-hero {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .concept-map-img {
+      border-radius: 18px;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      box-shadow: 0 6px 20px rgba(136, 19, 55, 0.08);
+      border: 1px solid var(--pink-200);
+      background: #fff;
+    }
+
+    .concept-map-img img {
+      width: 100%;
+      height: 290px;
+      object-fit: contain;
+      background: #fdfbfb;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .concept-map-img:hover img {
+      transform: scale(1.03);
+    }
+
+    .modal-box.lightbox-mode {
+      width: min(95%, 960px);
+      max-height: 92vh;
+      padding: 1.5rem;
+    }
+
+    /* Evidencia fotográfica en acordeones */
+    .accordion-evidence {
+      margin-top: 1rem;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--pink-200);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .accordion-evidence img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-evidence img:hover {
+      transform: scale(1.02);
+    }
+
+    .evidence-caption {
+      padding: 0.6rem 0.9rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: var(--pink-50);
+      border-top: 1px solid var(--pink-100);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* Multi-página chips */
+    .multi-page-chips {
+      display: flex;
+      gap: 0.4rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .chip-btn {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      border: 1px solid var(--pink-200);
+      background: #fff;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .chip-btn.active {
+      background: var(--pink-500);
+      color: #fff;
+      border-color: var(--pink-500);
+    }
+
+    .cinema-cover-img {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 1rem;
+      display: block;
+      filter: drop-shadow(0 6px 12px rgba(136, 19, 55, 0.25));
+    }
+
   </style>
 </head>
 <body class="curtain-locked">
@@ -1116,6 +1386,7 @@
     <div class="curtain curtain-right"></div>
 
     <div class="cinema-spotlight-card">
+      <img src="images/salud-infantil/fase1-portada-logo.png" alt="Salud y Desarrollo Infantil" class="cinema-cover-img" />
       <div class="cinema-badge">✨ Proyecto Académico • Educación Infantil</div>
       <h1 class="cinema-title">Salud y Desarrollo Infantil</h1>
       <p class="cinema-subtitle">
@@ -1131,7 +1402,7 @@
           </div>
           <div class="author-pill">
             <span class="author-avatar">RB</span>
-            <span>Rosa Elena Beleno Arias</span>
+            <span>Rosa Elena Beleño Arias</span>
           </div>
           <div class="author-pill">
             <span class="author-avatar">SG</span>
@@ -1140,6 +1411,10 @@
           <div class="author-pill">
             <span class="author-avatar">VT</span>
             <span>Valentina Tinoco Díaz</span>
+          </div>
+          <div class="author-pill">
+            <span class="author-avatar">MD</span>
+            <span>María Isabel Díaz Barroso</span>
           </div>
         </div>
       </div>
@@ -1269,6 +1544,34 @@
 
       <!-- Mapa Conceptual Interactivo ODS 3 y 4 -->
       <h3 class="block-title">🗺️ Mapa Articulador: Los ODS 3 y 4 desde la Gestación</h3>
+
+      <!-- Showcase Visual del Mapa Conceptual -->
+      <div class="concept-map-hero searchable-item">
+        <div class="concept-map-img" onclick="openImageModal('images/salud-infantil/fase1-mapa-conceptual-ods.png', 'Mapa Conceptual: Los ODS 3 y 4 en la Atención Integral a la Primera Infancia desde la Gestación', 'Fase 1 • Fundamentación Conceptual', 'Articulación integral entre el ODS 3 (Salud y Bienestar) y el ODS 4 (Educación de Calidad) estableciendo el cimiento biológico, cognitivo e intersectorial.')">
+          <img src="images/salud-infantil/fase1-mapa-conceptual-ods.png" alt="Mapa conceptual ODS 3 y 4" />
+          <div class="image-zoom-overlay">
+            <span class="zoom-badge">🔍 Clic para ampliar en alta resolución</span>
+          </div>
+        </div>
+        <div>
+          <span class="card-badge">Esquema Integrador del Curso</span>
+          <h3 style="font-family:'Playfair Display',serif; color:var(--rose-deep); margin-bottom:0.6rem; font-size:1.4rem;">
+            Los ODS 3 y 4 en la Atención Integral a la Primera Infancia
+          </h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:1rem;">
+            Este mapa conceptual sintetiza el desarrollo infantil como un continuo desde la gestación hasta los 5 años. Plantea que la salud y la nutrición constituyen el cimiento biológico sin el cual el desarrollo cognitivo y socioemocional no puede florecer plenamente.
+          </p>
+          <div style="display:flex; gap:0.65rem; flex-wrap:wrap;">
+            <button class="btn-primary" onclick="openImageModal('images/salud-infantil/fase1-mapa-conceptual-ods.png', 'Mapa Conceptual: Los ODS 3 y 4 en la Atención Integral a la Primera Infancia desde la Gestación', 'Fase 1 • Fundamentación Conceptual', 'Articulación integral entre el ODS 3 (Salud y Bienestar) y el ODS 4 (Educación de Calidad) estableciendo el cimiento biológico, cognitivo e intersectorial.')">
+              🔍 Explorar Mapa Completo
+            </button>
+            <a href="images/salud-infantil/fase1-mapa-conceptual-ods.png" target="_blank" class="btn-secondary" style="text-decoration:none; display:inline-flex; align-items:center;">
+              Abrir Original ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="cards-grid-3 searchable-group">
         <article class="card searchable-item">
           <div class="card-top-accent"></div>
@@ -1328,7 +1631,14 @@
             <p>
               Es prioritario incorporar principios como los <strong>derechos, la integralidad, la participación, la diversidad y el reconocimiento de cada niño como un ser activo</strong>. Esto es vital porque el desarrollo humano no ocurre de una sola manera ni es igual para todos; el niño es protagonista de su propio desarrollo y este se construye mediante las relaciones con otras personas y con los diferentes entornos sociales y culturales.
             </p>
-            <div class="author-tag">✍️ Aporte por: Rosa Elena Beleno Arias</div>
+            <div class="author-tag">✍️ Aporte por: Rosa Elena Beleño Arias</div>
+            <div class="accordion-evidence">
+              <img src="images/salud-infantil/fase1-evidencia-preguntas-1-2.jpeg" alt="Evidencia preguntas 1 y 2" onclick="openImageModal('images/salud-infantil/fase1-evidencia-preguntas-1-2.jpeg', 'Evidencia Territorial: Infancia y Salud como Derecho Fundamental', 'Adriana Corrales y Rosa Beleño', 'Registro fotográfico del trabajo de observación de campo en el territorio sobre el derecho a la salud en el desarrollo infantil.')" />
+              <div class="evidence-caption">
+                <span>📸 Evidencia fotográfica de campo • Aporte Adriana Corrales y Rosa Beleño</span>
+                <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase1-evidencia-preguntas-1-2.jpeg', 'Evidencia Territorial: Infancia y Salud como Derecho Fundamental', 'Adriana Corrales y Rosa Beleño', 'Registro fotográfico del trabajo de observación de campo en el territorio sobre el derecho a la salud en el desarrollo infantil.')">🔍 Ampliar</button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1355,6 +1665,13 @@
               Los gobiernos nacionales y locales deben garantizar el acceso a servicios de salud de calidad, alimentación adecuada, agua potable, saneamiento básico, educación y espacios seguros. Es necesario fortalecer los programas de prevención y atención de manera articulada entre sectores, atendiendo las características de cada comunidad y fortaleciendo las rutas contra el maltrato, la violencia y cualquier vulneración de derechos.
             </p>
             <div class="author-tag">✍️ Aporte por: Valentina Tinoco Díaz</div>
+            <div class="accordion-evidence">
+              <img src="images/salud-infantil/fase1-evidencia-preguntas-3-4.jpeg" alt="Evidencia preguntas 3 y 4" onclick="openImageModal('images/salud-infantil/fase1-evidencia-preguntas-3-4.jpeg', 'Evidencia: El Rol Pedagógico en Entornos Educativos Protectores', 'Sheril Granda y Valentina Tinoco', 'Registro de actividades lúdicas y protectoras fortaleciendo vínculos y entornos saludables en el aula.')" />
+              <div class="evidence-caption">
+                <span>📸 Evidencia fotográfica pedagógica • Aporte Sheril Granda y Valentina Tinoco</span>
+                <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase1-evidencia-preguntas-3-4.jpeg', 'Evidencia: El Rol Pedagógico en Entornos Educativos Protectores', 'Sheril Granda y Valentina Tinoco', 'Registro de actividades lúdicas y protectoras fortaleciendo vínculos y entornos saludables en el aula.')">🔍 Ampliar</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1587,35 +1904,188 @@
         </div>
       </div>
       
-        <!-- Decálogos y Piezas Comunicativas -->
-      <h3 class="block-title">📣 Decálogos y Piezas Comunicativas del Equipo</h3>
+        <!-- Decálogos y Piezas Comunicativas del Equipo -->
+      <h3 class="block-title">📣 Decálogos y Piezas Comunicativas Individuales</h3>
+      <p style="color:var(--text-muted); margin-bottom:1.5rem;">
+        Recursos gráficos y decálogos diseñados por las integrantes del grupo para la sensibilización en salud, nutrición y protección de la infancia.
+      </p>
+
       <div class="cards-grid-2 searchable-group">
-        <div class="card searchable-item">
-          <span class="card-badge">Pieza Comunicativa 1</span>
-          <h3>Diálogo para Garantizar la Salud y Bienestar en la Primera Infancia</h3>
-          <p>Recurso gráfico enfocado en el rol mediador de la familia y la escuela para asegurar controles oportunos, afecto y ambientes libres de riesgo.</p>
-          <div class="author-tag">✍️ Autora: Sheril Paola Granda Rasedo</div>
+        <!-- PIEZA 1: SHERIL GRANDA -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper" onclick="openImageModal('images/salud-infantil/fase2-decalogo-sheril-1.png', 'Diálogo para Garantizar la Salud y Bienestar en la Primera Infancia', 'Sheril Paola Granda Rasedo', 'Infografía en formato cómic ilustrado: 1) Reconocer como sujeto de derecho, 2) Atención integral, 3) Fortalecer la atención en territorios, 4) Promover la participación de las familias.')">
+            <img id="img-sheril" src="images/salud-infantil/fase2-decalogo-sheril-1.png" alt="Pieza Sheril Granda" />
+            <div class="image-zoom-overlay">
+              <span class="zoom-badge">🔍 Ampliar Página</span>
+            </div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Infografía Cómic • 3 Páginas</span>
+            <h4>Diálogo para Garantizar la Salud y Bienestar en la Primera Infancia</h4>
+            <p>Recurso en estilo cómic educativo sobre el rol mediador de la familia, controles oportunos y ambientes protectores libres de violencia.</p>
+            <div class="multi-page-chips">
+              <button class="chip-btn active" onclick="switchImage('img-sheril', 'images/salud-infantil/fase2-decalogo-sheril-1.png', this)">Pág 1</button>
+              <button class="chip-btn" onclick="switchImage('img-sheril', 'images/salud-infantil/fase2-decalogo-sheril-2.png', this)">Pág 2</button>
+              <button class="chip-btn" onclick="switchImage('img-sheril', 'images/salud-infantil/fase2-decalogo-sheril-3.png', this)">Pág 3</button>
+            </div>
+            <div class="author-tag">✍️ Autora: Sheril Paola Granda Rasedo</div>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal(document.getElementById('img-sheril').src, 'Diálogo para Garantizar la Salud y Bienestar en la Primera Infancia', 'Sheril Paola Granda Rasedo', 'Infografía completa sobre garantía de derechos y salud infantil.')">🔍 Ver en grande</button>
+              <a href="https://canva.link/c77htct67bkvvwn" target="_blank" class="btn-canva-pill">🎨 Abrir en Canva ↗</a>
+            </div>
+          </div>
         </div>
 
-        <div class="card searchable-item">
-          <span class="card-badge">Pieza Comunicativa 2</span>
-          <h3>Decálogo: Desarrollo Integral de la Primera Infancia</h3>
-          <p>10 compromisos clave desde garantizar el acceso a salud y espacios seguros hasta crear mecanismos integrales para el seguimiento del desarrollo infantil.</p>
-          <div class="author-tag">✍️ Autora: Valentina Tinoco Díaz</div>
+        <!-- PIEZA 2: VALENTINA TINOCO -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper" onclick="openImageModal('images/salud-infantil/fase2-decalogo-valentina-1.png', 'Decálogo: Desarrollo Integral de la Primera Infancia', 'Valentina Tinoco Díaz', '10 compromisos fundamentales: salud infantil, alimentación saludable, educación inicial y cuidado, lenguaje y salud socioemocional.')">
+            <img id="img-valentina" src="images/salud-infantil/fase2-decalogo-valentina-1.png" alt="Decálogo Valentina Tinoco" />
+            <div class="image-zoom-overlay">
+              <span class="zoom-badge">🔍 Ampliar Página</span>
+            </div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Decálogo Cuaderno • 2 Páginas</span>
+            <h4>Decálogo: Desarrollo Integral de la Primera Infancia</h4>
+            <p>Estructuración de 10 compromisos prioritarios abarcando acceso universal a salud, nutrición equilibrada y estimulación socioemocional temprana.</p>
+            <div class="multi-page-chips">
+              <button class="chip-btn active" onclick="switchImage('img-valentina', 'images/salud-infantil/fase2-decalogo-valentina-1.png', this)">Puntos 1 a 5</button>
+              <button class="chip-btn" onclick="switchImage('img-valentina', 'images/salud-infantil/fase2-decalogo-valentina-2.png', this)">Puntos 6 a 10</button>
+            </div>
+            <div class="author-tag">✍️ Autora: Valentina Tinoco Díaz</div>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal(document.getElementById('img-valentina').src, 'Decálogo: Desarrollo Integral de la Primera Infancia', 'Valentina Tinoco Díaz', 'Decálogo institucional de compromisos en salud infantil.')">🔍 Ver en grande</button>
+              <a href="https://canva.link/6uj8z0o6tp1xe8q" target="_blank" class="btn-canva-pill">🎨 Abrir en Canva ↗</a>
+            </div>
+          </div>
         </div>
 
-        <div class="card searchable-item">
-          <span class="card-badge">Pieza Comunicativa 3</span>
-          <h3>Articulación Intersectorial y Ruta Integral (RIA)</h3>
-          <p>Síntesis estratégica sobre seguridad alimentaria y nutricional, educación inicial orientada al bienestar, priorización territorial y corresponsabilidad.</p>
-          <div class="author-tag">✍️ Autora: Adriana Patricia Corrales Cavas</div>
+        <!-- PIEZA 3: ADRIANA CORRALES -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper" onclick="openImageModal('images/salud-infantil/fase2-pieza-adriana.png', 'Articulación Intersectorial y Ruta Integral (RIA)', 'Adriana Patricia Corrales Cavas', 'Infografía sobre: 1) Articulación vía RIA, 2) Promoción de seguridad alimentaria, 3) Educación inicial orientada al bienestar y juego, 4) Priorización territorial, 5) Gestión intersectorial y corresponsabilidad.')">
+            <img src="images/salud-infantil/fase2-pieza-adriana.png" alt="Pieza Adriana Corrales" />
+            <div class="image-zoom-overlay">
+              <span class="zoom-badge">🔍 Ampliar Infografía</span>
+            </div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Infografía Estratégica</span>
+            <h4>Articulación Intersectorial y Ruta Integral (RIA)</h4>
+            <p>Ruta secuencial que articula seguridad alimentaria, educación orientada al bienestar lúdico, enfoque territorial y corresponsabilidad social.</p>
+            <div class="author-tag">✍️ Autora: Adriana Patricia Corrales Cavas</div>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase2-pieza-adriana.png', 'Articulación Intersectorial y Ruta Integral (RIA)', 'Adriana Patricia Corrales Cavas', 'Infografía sobre articulación territorial e intersectorial.')">🔍 Ver en grande</button>
+              <a href="https://canva.link/a8ff8x3ob9kdi99" target="_blank" class="btn-canva-pill">🎨 Abrir en Canva ↗</a>
+            </div>
+          </div>
         </div>
 
-        <div class="card searchable-item">
-          <span class="card-badge">Pieza Comunicativa 4</span>
-          <h3>Decálogo: Juntos por un Desarrollo Infantil Feliz</h3>
-          <p>Campaña visual sobre interacción afectiva, cuidado amoroso, entornos seguros para explorar y participación infantil como pilares del buen vivir.</p>
-          <div class="author-tag">✍️ Autora: Rosa Elena Beleno Arias</div>
+        <!-- PIEZA 4: ROSA ELENA BELEÑO -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper" onclick="openImageModal('images/salud-infantil/fase2-decalogo-rosa.png', 'Decálogo: Salud y Bienestar en Primera Infancia (Ley 1804 de 2016)', 'Rosa Elena Beleño Arias', 'Basado en la Ley 1804 de Cero a Siempre: Sujetos de derechos, vida saludable, atención integral, entornos seguros, trabajo con familias, participación, diversidad y seguimiento oportuno.')">
+            <img src="images/salud-infantil/fase2-decalogo-rosa.png" alt="Decálogo Rosa Beleño" />
+            <div class="image-zoom-overlay">
+              <span class="zoom-badge">🔍 Ampliar Decálogo</span>
+            </div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Decálogo Oficial • Ley 1804</span>
+            <h4>Decálogo: Juntos por la Salud Infantil</h4>
+            <p>10 principios fundamentales inspirados en la política de Estado "De Cero a Siempre" para la garantía de entornos afectivos y seguros.</p>
+            <div class="author-tag">✍️ Autora: Rosa Elena Beleño Arias</div>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase2-decalogo-rosa.png', 'Decálogo: Salud y Bienestar en Primera Infancia (Ley 1804 de 2016)', 'Rosa Elena Beleño Arias', 'Decálogo completo con base en la Ley 1804.')">🔍 Ver en grande</button>
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-32.png', 'Juntos por un Desarrollo Infantil Feliz', 'Rosa Elena Beleño Arias', 'Campaña visual: Interactuar, cuidar y acompañar.')">🌸 Ver Afiche Feliz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GALERÍA DE INFOGRAFÍAS DE LAS 5 INTEGRANTES SOBRE CICLOS DE VIDA -->
+      <h3 class="block-title" style="margin-top:3.5rem;">🌟 Galería Colaborativa: El Acompañamiento a los Ciclos de Vida (5 Integrantes)</h3>
+      <p style="color:var(--text-muted); margin-bottom:1.5rem;">
+        Colección completa de piezas comunicativas y organizadores gráficos elaborados por las 5 integrantes del grupo, explorando el Buen Vivir, la crianza afectiva y las particularidades de cada territorio.
+      </p>
+
+      <div class="cards-grid-3 searchable-group">
+        <!-- PIEZA COLABORATIVA 1 -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-29.jpeg', 'El Acompañamiento a los Ciclos de Vida: Cada Territorio Tiene su Propia Forma de Cuidar', 'Aporte Colaborativo', 'Reconocer cada historia, familia y comunidad juntas en el acompañamiento, respetar ritmos individuales y crecer con dignidad.')">
+            <img src="images/salud-infantil/fase2-pieza-comunicativa-29.jpeg" alt="Acompañamiento a los ciclos de vida" />
+            <div class="image-zoom-overlay"><span class="zoom-badge">🔍 Ampliar</span></div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Pieza 1 • Enfoque Territorial</span>
+            <h4>Acompañar es Reconocer Cada Historia</h4>
+            <p>Destaca que las prácticas de crianza hacen parte de la identidad cultural de cada comunidad y exige escuchar y respetar los ritmos infantiles.</p>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-29.jpeg', 'El Acompañamiento a los Ciclos de Vida: Cada Territorio Tiene su Propia Forma de Cuidar', 'Aporte Colaborativo', 'Reconocer cada historia, familia y comunidad juntas.')">🔍 Ver en alta definición</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PIEZA COLABORATIVA 2 -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-30.png', 'Promoviendo el Cuidado y el Desarrollo Integral en la Primera Infancia', 'Aporte Colaborativo', 'El amor y el juego nutren el cerebro, entornos seguros para explorar, escuchar su voz desde la cuna, la crianza como compromiso comunitario y el cuidado como acto pedagógico.')">
+            <img src="images/salud-infantil/fase2-pieza-comunicativa-30.png" alt="Desarrollo integral en la primera infancia" />
+            <div class="image-zoom-overlay"><span class="zoom-badge">🔍 Ampliar</span></div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Pieza 2 • Desarrollo Cerebral y Afecto</span>
+            <h4>El Amor y el Juego Nutren el Cerebro</h4>
+            <p>Aborda el cuidado como un acto pedagógico donde la ternura, el juego libre y la escucha activa fortalecen la arquitectura cerebral.</p>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-30.png', 'Promoviendo el Cuidado y el Desarrollo Integral en la Primera Infancia', 'Aporte Colaborativo', 'El amor y el juego nutren el cerebro.')">🔍 Ver en alta definición</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PIEZA COLABORATIVA 3 -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-31.png', 'Ayudar para Crecer: Pequeñas Acciones, Grandes Impactos', 'Aporte Colaborativo', 'Cuidar es acompañar, escuchar también es educar, familia y comunidad son partes del desarrollo y cada niño tiene su propia historia.')">
+            <img src="images/salud-infantil/fase2-pieza-comunicativa-31.png" alt="Ayudar para crecer" />
+            <div class="image-zoom-overlay"><span class="zoom-badge">🔍 Ampliar</span></div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Pieza 3 • Escucha y Cuidado</span>
+            <h4>Ayudar para Crecer</h4>
+            <p>Resalta que escuchar también es educar y que las familias aportan saberes tradicionales que enriquecen el acompañamiento integral.</p>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-31.png', 'Ayudar para Crecer: Pequeñas Acciones, Grandes Impactos', 'Aporte Colaborativo', 'Cuidar es acompañar, escuchar también es educar.')">🔍 Ver en alta definición</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PIEZA COLABORATIVA 4 -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-32.png', 'Juntos por un Desarrollo Infantil Feliz', 'Rosa Elena Beleño Arias', 'Interactuar también es educar, el cuidado es amor que protege, entornos seguros e infancias que florecen, y la participación infantil.')">
+            <img src="images/salud-infantil/fase2-pieza-comunicativa-32.png" alt="Desarrollo infantil feliz" />
+            <div class="image-zoom-overlay"><span class="zoom-badge">🔍 Ampliar</span></div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Pieza 4 • Lúdica y Comunidad</span>
+            <h4>Juntos por un Desarrollo Infantil Feliz</h4>
+            <p>Ilustración lúdica de los 5 pilares: afecto protector, espacios saludables, interacción dialogante, participación infantil y corresponsabilidad.</p>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-32.png', 'Juntos por un Desarrollo Infantil Feliz', 'Rosa Elena Beleño Arias', 'Interactuar también es educar, el cuidado es amor que protege.')">🔍 Ver en alta definición</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PIEZA COLABORATIVA 5 -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-33.png', 'Caracterización del Acompañamiento a los Ciclos de Vida', 'Aporte Colaborativo', 'Desde la gestación y bienvenida, lactancia y primer año, exploración de 1 a 3 años, hasta lenguaje y autonomía de 3 a 6 años, integrando la red de cuidado.')">
+            <img src="images/salud-infantil/fase2-pieza-comunicativa-33.png" alt="Ciclos de vida en mapa mental" />
+            <div class="image-zoom-overlay"><span class="zoom-badge">🔍 Ampliar</span></div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Pieza 5 • Mapa Mental de Ciclos</span>
+            <h4>Ruta Secuencial de los Ciclos de Vida</h4>
+            <p>Organizador gráfico detallando desde la gestación y el apego en el primer año, hasta la exploración motriz y el lenguaje autónomo preescolar.</p>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase2-pieza-comunicativa-33.png', 'Caracterización del Acompañamiento a los Ciclos de Vida', 'Aporte Colaborativo', 'Ruta gráfica desde la gestación hasta los 6 años.')">🔍 Ver en alta definición</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1680,6 +2150,46 @@
         </div>
       </div>
       
+      <!-- Infografías Oficiales del Cuidado Cariñoso y Sensible (UNICEF / OMS) -->
+      <h3 class="block-title">🌸 Infografías Centrales: El Cuidado Cariñoso y Sensible (UNICEF / OMS)</h3>
+      <p style="color:var(--text-muted); margin-bottom:1.5rem;">
+        Ejes teóricos y prácticos articulados en los planes de promoción pedagógica para garantizar el desarrollo pleno de las potencialidades infantiles.
+      </p>
+
+      <div class="cards-grid-2 searchable-group" style="margin-bottom:3rem;">
+        <!-- INFOGRAFÍA 1 -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper contain-thumb" onclick="openImageModal('images/salud-infantil/fase3-infografia-cuidado-sensible-1.png', 'Los Cinco Componentes del Cuidado Cariñoso y Sensible', 'Marco UNICEF / OMS', '1) Buena salud, 2) Nutrición adecuada, 3) Atención receptiva, 4) Oportunidades para el aprendizaje temprano, 5) Seguridad y protección.')">
+            <img src="images/salud-infantil/fase3-infografia-cuidado-sensible-1.png" alt="Los 5 componentes del cuidado sensible" />
+            <div class="image-zoom-overlay"><span class="zoom-badge">🔍 Ampliar Infografía</span></div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Componentes Esenciales</span>
+            <h4>Los 5 Componentes del Cuidado Cariñoso y Sensible</h4>
+            <p>Esquema formativo que define los cimientos inseparables para el desarrollo: salud oportuna, alimentación rica en nutrientes, afecto receptivo, juego temprano y ambientes seguros libres de violencia.</p>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase3-infografia-cuidado-sensible-1.png', 'Los Cinco Componentes del Cuidado Cariñoso y Sensible', 'Marco UNICEF / OMS', '1) Buena salud, 2) Nutrición adecuada, 3) Atención receptiva, 4) Aprendizaje temprano, 5) Seguridad y protección.')">🔍 Ver en alta resolución</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- INFOGRAFÍA 2 -->
+        <div class="image-preview-card searchable-item">
+          <div class="image-thumb-wrapper contain-thumb" onclick="openImageModal('images/salud-infantil/fase3-infografia-cuidado-sensible-2.png', 'Cuidado Cariñoso y Sensible: Potencialidades y Entorno Educativo', 'Resumen UNICEF et al. (2021)', 'Estimulación cerebral, desarrollo emocional saludable, fortalecimiento del apego, resiliencia y adaptabilidad, y mejoras en el rendimiento escolar futuro.')">
+            <img src="images/salud-infantil/fase3-infografia-cuidado-sensible-2.png" alt="Potencialidades y entorno educativo" />
+            <div class="image-zoom-overlay"><span class="zoom-badge">🔍 Ampliar Infografía</span></div>
+          </div>
+          <div class="image-card-body">
+            <span class="card-badge">Síntesis de Evidencia • UNICEF 2021</span>
+            <h4>Potencialidades y Oportunidades en el Entorno Educativo</h4>
+            <p>Evidencia científica sobre cómo el cuidado sensible promueve la estimulación cerebral, fortalece la resiliencia y previene rezagos en el rendimiento escolar a través de la alianza docente-familia.</p>
+            <div class="image-card-actions">
+              <button class="btn-zoom" onclick="openImageModal('images/salud-infantil/fase3-infografia-cuidado-sensible-2.png', 'Cuidado Cariñoso y Sensible: Potencialidades y Entorno Educativo', 'Resumen UNICEF et al. (2021)', 'Estimulación cerebral, fortalecimiento del apego y articulación docente.')">🔍 Ver en alta resolución</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Planes de Promoción en Salud y Bienestar (2 Propuestas Detalladas) -->
       <h3 class="block-title">📋 Planes de Promoción en Salud y Bienestar en el Entorno Educativo</h3>
       <div class="subtabs-nav">
@@ -1802,7 +2312,7 @@
   <footer>
     <p>
       <strong>Salud y Desarrollo Infantil</strong> • Plataforma Web Académica Interactiva (Fases 1, 2 y 3)<br>
-      Elaborado por: Adriana Patricia Corrales Cavas, Rosa Elena Beleno Arias, Sheril Paola Granda Rasedo y Valentina Tinoco Díaz.
+      Elaborado colaborativamente por las 5 integrantes del grupo: Adriana Patricia Corrales Cavas, Rosa Elena Beleño Arias, Sheril Paola Granda Rasedo, Valentina Tinoco Díaz y María Isabel Díaz Barroso.
     </p>
   </footer>
 
@@ -1900,6 +2410,8 @@
     const closeModalBtn = document.getElementById('closeModalBtn');
 
     function openTextModal(title, bodyText) {
+      const modalBox = document.querySelector('.modal-box');
+      modalBox.classList.remove('lightbox-mode');
       modalContent.innerHTML = `
         <span class="card-badge">Lectura Profunda • Fase 3</span>
         <h2 style="font-family:'Playfair Display',serif; color:var(--rose-deep); margin:0.5rem 0 1rem;">${title}</h2>
@@ -1908,22 +2420,61 @@
       infoModal.classList.add('open');
     }
 
+    // Lightbox para imágenes en alta resolución
+    function openImageModal(imgSrc, title, author, desc) {
+      const modalBox = document.querySelector('.modal-box');
+      modalBox.classList.add('lightbox-mode');
+      modalContent.innerHTML = `
+        <div class="lightbox-modal-content">
+          <span class="card-badge">${author ? author : 'Recurso Académico'}</span>
+          <h2 style="font-family:'Playfair Display',serif; color:var(--rose-deep); margin:0.4rem 0 0.4rem; font-size:1.35rem;">${title}</h2>
+          ${desc ? `<p style="color:var(--text-muted); font-size:0.88rem; line-height:1.5; margin-bottom:0.75rem;">${desc}</p>` : ''}
+          <div style="background:#fafafa; border-radius:16px; overflow:hidden; border:1px solid var(--pink-200); box-shadow:0 6px 24px rgba(0,0,0,0.1);">
+            <img src="${imgSrc}" alt="${title}" style="max-width:100%; max-height:68vh; object-fit:contain; display:block; margin:0 auto;" />
+          </div>
+          <div style="display:flex; justify-content:center; gap:0.75rem; margin-top:1rem; flex-wrap:wrap;">
+            <a href="${imgSrc}" target="_blank" class="btn-primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem; padding:0.55rem 1.2rem; font-size:0.85rem;">
+              <span>🔍 Ver archivo original</span>
+            </a>
+            <button onclick="document.getElementById('infoModal').classList.remove('open')" class="btn-secondary" style="padding:0.55rem 1.2rem; font-size:0.85rem;">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      `;
+      infoModal.classList.add('open');
+    }
+
+    // Selector de páginas en piezas multi-página
+    function switchImage(targetImgId, newSrc, btnElement) {
+      const img = document.getElementById(targetImgId);
+      if (img) {
+        img.src = newSrc;
+        const parent = btnElement.parentElement;
+        parent.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
+        btnElement.classList.add('active');
+      }
+    }
+
     function openAuthorsModal() {
+      document.querySelector('.modal-box').classList.remove('lightbox-mode');
       modalContent.innerHTML = `
         <span class="card-badge">Equipo Investigador</span>
         <h2 style="font-family:'Playfair Display',serif; color:var(--rose-deep); margin:0.5rem 0 1rem;">Autoras del Proyecto</h2>
         <p style="color:var(--text-muted); margin-bottom:1.2rem;">Proyecto desarrollado en el marco de la Licenciatura en Educación Infantil:</p>
         <div class="authors-grid">
           <div class="author-pill"><span class="author-avatar">AC</span><span>Adriana Patricia Corrales Cavas</span></div>
-          <div class="author-pill"><span class="author-avatar">RB</span><span>Rosa Elena Beleno Arias</span></div>
+          <div class="author-pill"><span class="author-avatar">RB</span><span>Rosa Elena Beleño Arias</span></div>
           <div class="author-pill"><span class="author-avatar">SG</span><span>Sheril Paola Granda Rasedo</span></div>
           <div class="author-pill"><span class="author-avatar">VT</span><span>Valentina Tinoco Díaz</span></div>
+          <div class="author-pill"><span class="author-avatar">MD</span><span>María Isabel Díaz Barroso</span></div>
         </div>
       `;
       infoModal.classList.add('open');
     }
 
     function showPendingToast(faseName) {
+      document.querySelector('.modal-box').classList.remove('lightbox-mode');
       modalContent.innerHTML = `
         <span class="status-tag status-wip">En Desarrollo</span>
         <h2 style="font-family:'Playfair Display',serif; color:var(--rose-deep); margin:0.75rem 0;">${faseName} en Construcción</h2>

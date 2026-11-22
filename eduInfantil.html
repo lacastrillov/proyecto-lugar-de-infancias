@@ -1404,6 +1404,102 @@
       font-size: 0.85rem;
       color: var(--text-muted);
     }
+
+    /* ================= TABLA PLAN DE PROMOCIÓN (ANEXO 4) ================= */
+    .table-responsive-container {
+      width: 100%;
+      overflow-x: auto;
+      margin-top: 1.25rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-soft);
+      background: #ffffff;
+    }
+    .academic-plan-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+    .plan-table-main-title {
+      background: linear-gradient(135deg, var(--rose-deep), #9f1239);
+      color: #ffffff;
+      padding: 1.25rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+    .plan-table-section-title {
+      background: var(--pink-100);
+      color: var(--rose-deep);
+      padding: 0.85rem 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      text-align: center;
+      font-weight: 700;
+      border: 1px solid var(--border-soft);
+    }
+    .plan-row-label {
+      vertical-align: top;
+      width: 25%;
+      min-width: 220px;
+      background: #fffafc;
+      color: var(--rose-deep);
+      font-weight: 700;
+      padding: 1rem 1.2rem;
+      border: 1px solid var(--border-soft);
+      text-align: left;
+    }
+    .plan-atencion-header {
+      vertical-align: top;
+      width: 25%;
+      min-width: 220px;
+      background: #fff1f5;
+      color: var(--rose-deep);
+      font-size: 0.95rem;
+      border: 1px solid var(--border-soft);
+      padding: 1.25rem 1.1rem;
+    }
+    .plan-subfield-cell {
+      padding: 1.05rem 1.25rem;
+      border: 1px solid var(--border-soft);
+      vertical-align: top;
+      background: #ffffff;
+    }
+    .plan-field-label {
+      color: var(--rose-deep);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .plan-action-item {
+      margin-bottom: 0.85rem;
+    }
+    .plan-action-item:last-child {
+      margin-bottom: 0;
+    }
+    .plan-list {
+      margin: 0.45rem 0 0.85rem 1.25rem;
+      padding: 0;
+    }
+    .plan-list li {
+      margin-bottom: 0.4rem;
+    }
+    .academic-plan-table td p {
+      margin-bottom: 0.75rem;
+    }
+    .academic-plan-table td p:last-child {
+      margin-bottom: 0;
+    }
+    .custom-video-screen:hover img {
+      opacity: 1 !important;
+      transform: scale(1.02) !important;
+    }
+    .custom-video-screen:hover .video-play-button {
+      transform: scale(1.12) !important;
+      box-shadow: 0 0 35px rgba(255, 0, 0, 0.9) !important;
+    }
+
   </style>
 </head>
 
@@ -3025,136 +3121,142 @@
           <h3 class="activity-title">
             <span>🧒 Plan de Promoción: “Crecer sanos y felices”</span>
           </h3>
-          <span class="activity-type-badge">Grupo Etario: 3 a 6 Años</span>
+          <span class="activity-type-badge">Matriz Curricular • Grupo Etario: 3 a 6 Años</span>
         </div>
 
-        <div class="card"
-          style="border:2px solid var(--pink-300); background:linear-gradient(145deg, #ffffff, #fff7fa);">
-          <div
-            style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;">
-            <div>
-              <span class="card-badge" style="background:var(--pink-200); color:var(--rose-deep);">Etapa Preescolar •
-                Entorno Educativo</span>
-              <h3 style="font-size:1.45rem; color:var(--rose-deep); margin:0.3rem 0;">Crecer sanos y felices:
-                estrategias pedagógicas para la promoción de la salud en la primera infancia</h3>
-              <p style="color:var(--text-muted); font-size:0.92rem; margin:0;">
-                <strong>Destinatarios:</strong> Niñas y niños de 3 a 6 años, familias y educadores infantiles.
-              </p>
-            </div>
-            <span style="font-size:2.2rem;">🧒</span>
-          </div>
-
-          <div class="grid-2" style="margin-bottom:1.25rem;">
-            <div style="background:white; padding:1.2rem; border-radius:12px; border:1px solid var(--border-soft);">
-              <h4 style="font-size:0.95rem; color:var(--rose-deep); margin-bottom:0.4rem;">🎯 Objetivo General</h4>
-              <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
-                Diseñar e implementar estrategias pedagógicas fundamentadas en el juego, la literatura y la exploración
-                que promuevan prácticas de autocuidado, estilos de vida saludables y corresponsabilidad familiar en el
-                entorno educativo.
-              </p>
-            </div>
-            <div style="background:white; padding:1.2rem; border-radius:12px; border:1px solid var(--border-soft);">
-              <h4 style="font-size:0.95rem; color:var(--rose-deep); margin-bottom:0.4rem;">🎯 Objetivos Específicos</h4>
-              <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
-                1. Fortalecer conocimientos y hábitos de higiene, salud bucal y nutrición equilibrada en niñas y
-                niños.<br>
-                2. Articular a las familias en jornadas formativas sobre crianza positiva y prevención oportuna de
-                enfermedades.
-              </p>
-            </div>
-          </div>
-
-          <!-- Estructura de las 5 Atenciones -->
-          <h4 style="font-size:1.1rem; color:var(--rose-deep); margin-bottom:0.85rem;">
-            Estructura de las 5 Atenciones Pedagógicas del Plan:
-          </h4>
-
-          <div style="display:flex; flex-direction:column; gap:1rem;">
-            <!-- Atención 1 -->
-            <div
-              style="background:white; padding:1.2rem; border-radius:14px; border:1px solid var(--border-soft); border-left:5px solid #06b6d4;">
-              <strong style="color:var(--rose-deep); font-size:0.98rem; display:block; margin-bottom:0.4rem;">Atención
-                1: Crecimiento y Desarrollo Integral</strong>
-              <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.5rem;">
-                Promover el seguimiento integral del crecimiento y desarrollo mediante actividades pedagógicas dirigidas
-                a los niños y sus familias.
-              </p>
-              <div
-                style="font-size:0.85rem; color:var(--text-main); background:var(--pink-50); padding:0.75rem; border-radius:8px;">
-                <strong>Estrategias Pedagógicas:</strong> Taller lúdico <em>"Así crezco yo"</em> con siluetas corporales
-                y encuentros de orientación con padres sobre hitos de desarrollo físico, cognitivo y comunicativo.
-              </div>
-            </div>
-
-            <!-- Atención 2 -->
-            <div
-              style="background:white; padding:1.2rem; border-radius:14px; border:1px solid var(--border-soft); border-left:5px solid #10b981;">
-              <strong style="color:var(--rose-deep); font-size:0.98rem; display:block; margin-bottom:0.4rem;">Atención
-                2: Vacunación y Prevención de Enfermedades</strong>
-              <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.5rem;">
-                Desarrollar estrategias educativas sobre la importancia de la vacunación y la prevención de enfermedades
-                mediante actividades pedagógicas dirigidas a los niños y sus familias.
-              </p>
-              <div
-                style="font-size:0.85rem; color:var(--text-main); background:var(--pink-50); padding:0.75rem; border-radius:8px;">
-                <strong>Estrategias Pedagógicas:</strong> Dramatizaciones con títeres: <em>"Los superhéroes de la salud
-                  (las vacunas nos protegen)"</em>, talleres prácticos del correcto lavado de manos y elaboración de la
-                cartilla lúdica de seguimiento al carné de vacunación.
-              </div>
-            </div>
-
-            <!-- Atención 3 -->
-            <div
-              style="background:white; padding:1.2rem; border-radius:14px; border:1px solid var(--border-soft); border-left:5px solid #8b5cf6;">
-              <strong style="color:var(--rose-deep); font-size:0.98rem; display:block; margin-bottom:0.4rem;">Atención
-                3: Salud Visual, Auditiva y Oral</strong>
-              <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.5rem;">
-                Promover el cuidado de la salud visual, auditiva y oral mediante experiencias pedagógicas interactivas.
-              </p>
-              <div
-                style="font-size:0.85rem; color:var(--text-main); background:var(--pink-50); padding:0.75rem; border-radius:8px;">
-                <strong>Estrategias Pedagógicas:</strong> Actividad <em>"Mi sonrisa brillante"</em> con macro-cepillos
-                modelando técnicas correctas y juegos de discriminación visual y sonora para la detección oportuna de
-                dificultades sensoriales.
-              </div>
-            </div>
-
-            <!-- Atención 4 -->
-            <div
-              style="background:white; padding:1.2rem; border-radius:14px; border:1px solid var(--border-soft); border-left:5px solid #f59e0b;">
-              <strong style="color:var(--rose-deep); font-size:0.98rem; display:block; margin-bottom:0.4rem;">Atención
-                4: Alimentación Saludable y Actividad Física</strong>
-              <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.5rem;">
-                Implementar estrategias pedagógicas para fortalecer la alimentación saludable, el consumo de agua y la
-                actividad física regular.
-              </p>
-              <div
-                style="font-size:0.85rem; color:var(--text-main); background:var(--pink-50); padding:0.75rem; border-radius:8px;">
-                <strong>Estrategias Pedagógicas:</strong> Taller <em>"El arcoíris de frutas y verduras"</em>, huerto
-                escolar y circuitos de psicomotricidad lúdica para prevenir el sedentarismo infantil y el exceso de
-                pantallas.
-              </div>
-            </div>
-
-            <!-- Atención 5 -->
-            <div
-              style="background:white; padding:1.2rem; border-radius:14px; border:1px solid var(--border-soft); border-left:5px solid #ec4899;">
-              <strong style="color:var(--rose-deep); font-size:0.98rem; display:block; margin-bottom:0.4rem;">Atención
-                5: Bienestar Emocional, Convivencia y Protección</strong>
-              <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.5rem;">
-                Fortalecer el bienestar emocional, la convivencia armónica y la protección integral mediante cuentos,
-                expresión artística y acuerdos pedagógicos.
-              </p>
-              <div
-                style="font-size:0.85rem; color:var(--text-main); background:var(--pink-50); padding:0.75rem; border-radius:8px;">
-                <strong>Estrategias Pedagógicas:</strong> Rincón de la calma y lectura guiada sobre gestión respetuosa
-                de emociones (miedo, enojo, tristeza, alegría), junto a talleres familiares sobre crianza afectiva y
-                erradicación del maltrato infantil.
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="table-responsive-container">
+  <table class="academic-plan-table">
+    <thead>
+      <tr>
+        <th colspan="2" class="plan-table-main-title">Plan de promoción en salud y bienestar en el entorno educativo para favorecer el desarrollo integral en la primera infancia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="plan-row-label">Nombre:</th>
+        <td><p>“Crecer sanos y felices: estrategias pedagógicas para la promoción de la salud, el autocuidado y el bienestar integral en la primera infancia”.</p></td>
+      </tr>
+      <tr>
+        <th class="plan-row-label">Momento o grupo etario:</th>
+        <td><p>Niñas y niños de tres a seis años.</p></td>
+      </tr>
+      <tr>
+        <th class="plan-row-label">Justificación de la elección:</th>
+        <td><p>El plan se formula a partir del único diagnóstico situacional incluido en el documento del Escenario 3, correspondiente al hogar infantil del corregimiento de Tierra Firme, municipio de Santa Cruz de Mompox, Bolívar. La información recolectada reporta que los 10 niños y niñas matriculados cuentan con esquema de vacunación completo, asisten a controles de crecimiento y desarrollo y reciben seguimiento periódico de peso y talla. Asimismo, se identificó un niño con riesgo de malnutrición (10 %), situación que requiere continuidad del seguimiento nutricional y articulación con las familias y los servicios de salud.</p>
+<p>Estos resultados orientan la necesidad de fortalecer, desde el entorno educativo, la promoción de hábitos saludables, la alimentación adecuada, la higiene, el autocuidado, el bienestar emocional y la prevención de riesgos. La elección de los niños y las niñas de tres a seis años permite desarrollar experiencias pedagógicas acordes con esta etapa del desarrollo, sin sustituir las funciones propias del personal sanitario. Las acciones propuestas se fundamentan exclusivamente en los hallazgos de Tierra Firme y en la corresponsabilidad entre agentes educativos, familias y servicios de salud. (Ministerio de Educación Nacional, 2013; Organización Panamericana de la Salud [OPS], 2021).</p></td>
+      </tr>
+      <tr>
+        <th class="plan-row-label">Atención priorizada:</th>
+        <td><p>Promoción de hábitos de vida saludables, fortalecimiento del autocuidado y prevención de riesgos para favorecer el bienestar físico, emocional y social de los niños y las niñas de tres a seis años en el entorno educativo.</p>
+<p>La atención priorizada se orienta al desarrollo de acciones educativas y preventivas que contribuyan a mejorar las condiciones de salud y bienestar de los niños y las niñas, mediante experiencias cotidianas adaptadas a sus características de desarrollo. Se propone trabajar de manera articulada los hábitos de higiene personal y bucal, la alimentación saludable, la actividad física, el cuidado emocional, la convivencia y la prevención de accidentes. Estos componentes se relacionan entre sí, puesto que el bienestar infantil depende de la interacción entre las condiciones físicas del entorno, las relaciones afectivas, las oportunidades de aprendizaje y las prácticas de cuidado que acompañan la vida cotidiana.</p>
+<p>En primer lugar, se promoverán experiencias pedagógicas que permitan fortalecer los hábitos de higiene y autocuidado. Mediante demostraciones del lavado de manos, cuentos, canciones, secuencias ilustradas y rutinas diarias, se buscará que los niños y las niñas comprendan la importancia de mantener su cuerpo limpio, cuidar su salud bucal y contribuir a la conservación de espacios higiénicos. Las actividades deberán desarrollarse con acompañamiento adulto, materiales adecuados y oportunidades para practicar, de modo que el aprendizaje no se limite a memorizar recomendaciones, sino que se refleje progresivamente en las acciones cotidianas.</p>
+<p>En segundo lugar, se desarrollarán experiencias orientadas a la alimentación saludable y al movimiento corporal. Se podrán realizar actividades de reconocimiento de alimentos, conversaciones sobre la importancia del agua y los alimentos variados, juegos motores, rondas, circuitos de movimiento y actividades al aire libre en espacios seguros. Estas experiencias buscarán favorecer el desarrollo de las habilidades motrices, el disfrute del movimiento y la comprensión inicial de la relación entre alimentación, actividad física y bienestar. Las propuestas deberán considerar las necesidades individuales, las posibles restricciones alimentarias y las condiciones de acceso de las familias, evitando imponer prácticas que desconozcan sus realidades.</p>
+<p>En tercer lugar, se fortalecerá el bienestar emocional y la convivencia mediante actividades que ayuden a identificar y expresar emociones, reconocer las necesidades propias y ajenas, resolver desacuerdos de forma pacífica y acudir a personas adultas de confianza ante situaciones que generen inseguridad. El uso de cuentos, títeres, juegos cooperativos, dibujos y conversaciones guiadas permitirá crear oportunidades para hablar sobre el respeto, la empatía, el buen trato y la protección. Estas acciones deben acompañarse de relaciones pedagógicas afectuosas y de protocolos institucionales adecuados para actuar cuando se identifiquen posibles situaciones de vulneración de derechos.</p>
+<p>En cuarto lugar, se promoverá la prevención de accidentes mediante la identificación de riesgos presentes en los espacios educativos, el uso adecuado de los materiales y la construcción de rutinas seguras durante el juego, la alimentación, los desplazamientos y las actividades colectivas. Esta labor requiere que los agentes educativos supervisen los espacios, identifiquen condiciones que puedan ocasionar lesiones y adopten medidas preventivas. La enseñanza del autocuidado debe complementarse con la responsabilidad institucional de garantizar ambientes seguros y accesibles.</p>
+<p>Finalmente, se fortalecerá la participación familiar y la articulación con los servicios de salud. Para ello, se podrán compartir orientaciones sobre hábitos saludables, desarrollar actividades que vinculen a las familias con las experiencias educativas y facilitar información sobre las rutas de atención disponibles. Cuando se identifiquen necesidades relacionadas con el crecimiento, el desarrollo, la salud oral, la vacunación o posibles señales de alerta, se orientará a las familias para que consulten los servicios competentes, respetando la confidencialidad y los procedimientos institucionales. Así, la atención priorizada integrará la promoción, la prevención, el acompañamiento educativo y la corresponsabilidad, sin atribuir a la institución educativa funciones propias del personal sanitario. (Ministerio de Educación Nacional, 2013; OPS, 2021).</p></td>
+      </tr>
+      <tr>
+        <th class="plan-row-label">Objetivo general:</th>
+        <td><p>Promover la salud y el bienestar integral de los niños y las niñas de tres a seis años mediante la implementación de estrategias pedagógicas, lúdicas y participativas en el entorno educativo que favorezcan la adquisición progresiva de hábitos de vida saludables, el fortalecimiento del autocuidado, el bienestar emocional, la convivencia respetuosa y la prevención de riesgos, a través de la participación corresponsable de los agentes educativos y las familias y la articulación con los servicios de salud, contribuyendo a la garantía de sus derechos y al desarrollo armónico de sus capacidades físicas, emocionales y sociales.</p></td>
+      </tr>
+      <tr>
+        <th class="plan-row-label">Objetivos específicos:<br><span style="font-size:0.75rem; font-weight:normal; color:var(--text-muted);">(Máximo dos)</span></th>
+        <td><p>Objetivo específico 1. Fortalecer en los niños y las niñas de tres a seis años la apropiación y práctica progresiva de hábitos de higiene, alimentación saludable, actividad física y autocuidado emocional, para favorecer su autonomía y bienestar integral.</p>
+<p>Objetivo específico 2. Consolidar la corresponsabilidad entre las familias y los agentes educativos para promover prácticas de cuidado, reconocer oportunamente señales de alerta y orientar a las familias hacia los servicios de salud cuando sea necesario.</p></td>
+      </tr>
+      <tr>
+        <th colspan="2" class="plan-table-section-title">Atenciones</th>
+      </tr>
+      <tr>
+        <td rowspan="4" class="plan-atencion-header">Atención 1:<br>Observación cualitativa y seguimiento articulado del crecimiento y desarrollo integral de cada niña o niño, vinculando a las familias con las valoraciones periódicas en salud.</td>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Acciones y descripción:</strong></p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">1. Laboratorio de exploración &#x27;Mi cuerpo cuenta su historia&#x27;:</strong> Se adecuará el espacio pedagógico con estaciones de espejos panorámicos, álbumes fotográficos familiares aportados previamente y siluetas corporales de tela en distintos tamaños que representan las etapas desde el nacimiento hasta los seis años. A través de una conversación mediada por un títere explorador, las niñas y los niños observarán las transformaciones de su cuerpo, compararán sus logros motores y comunicativos actuales con los de su primera infancia y reconocerán que cada persona crece de manera singular. Seguidamente, trabajarán en parejas para trazar el contorno de sus manos y pies sobre lienzos de tela ecológica, decorando sus creaciones con tintes naturales. La comparación de las siluetas tendrá un propósito expresivo y de exploración, no de medición antropométrica ni de valoración clínica. Durante la jornada, la docente en formación diligenciará la ficha de seguimiento cualitativo del desarrollo (observando coordinación, lenguaje, resolución de problemas e interacción social), aclarando en la nota pedagógica que se trata de una observación educativa y descriptiva, que no establece diagnósticos ni sustituye la valoración del personal de salud; cuando surjan inquietudes, se orientará a la familia para consultar los servicios correspondientes. Al finalizar, se organizará una galería abierta para las familias acompañada de un plegable sobre el calendario de consultas de crecimiento y desarrollo.</p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">2. Rally psicomotor &#x27;Desafíos en movimiento&#x27;:</strong> Partiendo de una narrativa de expedición por la naturaleza, se diseñará un recorrido psicomotor en el espacio abierto o patio institucional compuesto por cuatro retos progresivos: desplazamiento cuadrupédico bajo túneles de tela, marcha sobre vigas bajas de equilibrio transportando saquitos de semillas, lanzamientos de precisión hacia aros suspendidos y ensamblaje de piezas geométricas de gran formato. Este ejercicio permitirá observar en contexto la tonicidad muscular, la lateralidad, la planificación motora y la perseverancia frente a retos cotidianos, evitando cualquier dinámica de competencia o exclusión. Posteriormente, en pequeños grupos, los participantes dialogarán sobre qué movimientos les resultaron más sencillos y cuáles requirieron mayor concentración, plasmando su experiencia mediante estampado con esponjas. Como cierre, se remitirá a madres, padres y cuidadores un informe descriptivo de las fortalezas y situaciones observadas, sin emitir diagnósticos, junto con orientaciones para que la familia consulte al servicio de salud cuando tenga inquietudes sobre el desarrollo. (Ministerio de Educación Nacional, 2013).</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Recursos:</strong></p>
+<p>Espejos acrílicos seguros, fotografías familiares de etapas previas, siluetas corporales en tela, lienzos de algodón, cintas métricas flexibles, tintes vegetales o temperas lavables, ficha de observación cualitativa del desarrollo, túneles de tela, vigas bajas de equilibrio, saquitos de semillas, aros suspendidos, bloques de ensamble, esponjas y plegables informativos sobre consultas de crecimiento y desarrollo.</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Actores mediadores:</strong> Docente titular, docente en formación, auxiliar pedagógica, directivos docentes, madres, padres, personas cuidadoras y profesionales de medicina y enfermería del programa de crecimiento y desarrollo.</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Formas de participación:</strong></p>
+<ul class="plan-list"><li><strong>Docente titular:</strong> orienta la articulación curricular de la observación pedagógica, contrasta los avances del grupo y lidera el diálogo preventivo con las familias.</li><li><strong>Docente en formación:</strong> estructura los ambientes de exploración, acompaña las experiencias psicomotoras y sistematiza los registros cualitativos de cada niña y niño, sin realizar diagnósticos ni valoraciones clínicas.</li><li><strong>Auxiliar pedagógica:</strong> vela por la seguridad física de los materiales y espacios durante el rally motor y brinda apoyo individualizado a quienes lo precisen.</li><li><strong>Familias y personas cuidadoras:</strong> aportan insumos de la historia vital del niño, retroalimentan las observaciones del aula y garantizan la asistencia puntual a los controles de crecimiento y desarrollo.</li><li><strong>Profesionales de salud:</strong> realizan las valoraciones clínicas integrales, interpretan los indicadores de crecimiento y desarrollo y definen las orientaciones o intervenciones que correspondan.</li></ul></td>
+      </tr>
+      <tr>
+        <td rowspan="4" class="plan-atencion-header">Atención 2:<br>Seguimiento nutricional, promoción de la alimentación saludable con identidad territorial y orientaciones sobre desparasitación y micronutrientes.</td>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Acciones y descripción:</strong></p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">1. Huerta sensorial y feria de sabores de nuestra tierra:</strong> La experiencia se desarrollará ambientando el aula como un mercado campesino local con canastos de alimentos frescos propios de la región (frutas de cosecha, hortalizas, tubérculos, granos, cereales y lácteos), acompañados de algunos productos industriales empaquetados para establecer contrastes reales. Antes de la experiencia, el equipo educativo y la persona encargada de la alimentación verificarán con las familias posibles alergias, intolerancias, restricciones alimentarias y necesidades particulares, además de las condiciones de higiene e inocuidad. Las niñas y los niños explorarán mediante el tacto, el olfato y, cuando sea seguro y voluntario, la degustación de alimentos naturales, conversando sobre quiénes cultivan los alimentos, cómo llegan a la mesa y qué preparaciones tradicionales cocinan sus abuelas y familias. A través de un juego de asociación llamado &#x27;¿Qué necesita mi cuerpo para jugar y pensar?&#x27;, vincularán cada grupo de alimentos con funciones vitales como tener energía, fortalecer huesos y protegerse de enfermedades, destacando el consumo de agua pura frente a jugos artificiales o gaseosas. Posteriormente, elaborarán en equipo un recetario ilustrado con dibujos y dictados al adulto sobre sus platos saludables favoritos. Finalmente, se socializará el recetario con los hogares junto con una ficha pedagógica que explica la importancia del seguimiento nutricional, la desparasitación periódica y el suministro de micronutrientes formulados por el sector salud.</p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">2. Taller culinario &#x27;Pequeños chefs autónomos&#x27;:</strong> Iniciando con el protocolo higiénico de lavado de manos y colocación de delantales, se presentará a las niñas y los niños una estación culinaria adaptada a su estatura con recipientes individuales, cucharas medidoras, pinzas de madera, platos hondos y vasos irrompibles. Se explicará el uso seguro de cada utensilio y la importancia de servirse cantidades acordes con su apetito para valorar los alimentos y evitar desperdicios. A continuación, prepararán de manera autónoma una receta fría nutritiva (brochetas de frutas frescas con yogur natural y semillas de chía o avena), seleccionando libremente entre los ingredientes previamente verificados como seguros para cada participante y practicando habilidades de coordinación fina al ensartar y servir. Durante el consumo colectivo se fomentará la conversación amable, el reconocimiento de sabores y el respeto por las preferencias individuales, sin obligar a probar ni consumir alimentos. Al concluir, cada participante colaborará en la recolección de residuos orgánicos para compostaje, la entrega de utensilios y la limpieza de su mesa, reflexionando sobre su creciente independencia en el cuidado nutricional. (Ministerio de Educación Nacional, 2013; OPS, 2021).</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Recursos:</strong></p>
+<p>Canastos de mimbre, alimentos frescos regionales (frutas, verduras, granos, tubérculos), empaques de productos ultraprocesados para análisis, cartulinas y marcadores para el recetario ilustrado, delantales infantiles, recipientes individuales, pinzas de madera, cucharas, vasos, agua potable, jabón líquido, toallas y fichas informativas sobre nutrición, micronutrientes y desparasitación.</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Actores mediadores:</strong> Docente titular, docente en formación, auxiliar pedagógica, manipuladora de alimentos, madres, padres, personas cuidadoras y profesionales de nutrición y salud pública.</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Formas de participación:</strong></p>
+<ul class="plan-list"><li><strong>Docente titular:</strong> promueve prácticas cotidianas de alimentación consciente e hidratación en el entorno educativo y observa cambios o situaciones que puedan generar inquietud y los comunica a la familia por los canales institucionales, sin realizar diagnósticos nutricionales.</li><li><strong>Docente en formación:</strong> diseña y media el laboratorio sensorial y el taller culinario, fortaleciendo la autonomía y el reconocimiento de la cultura alimentaria local.</li><li><strong>Auxiliar pedagógica y manipuladora de alimentos:</strong> aseguran la inocuidad de los insumos, acompañan el lavado de manos y apoyan la logística segura durante la preparación.</li><li><strong>Familias y personas cuidadoras:</strong> promueven en el hogar una alimentación variada y acorde con sus posibilidades, informan sobre alergias o restricciones y asisten a las citas y orientaciones indicadas por los servicios de salud.</li><li><strong>Profesionales de nutrición y salud:</strong> realizan el seguimiento nutricional y, de acuerdo con la valoración y los lineamientos vigentes, indican o suministran la desparasitación, los micronutrientes y la complementación alimentaria que correspondan, además de orientar a las familias.</li></ul></td>
+      </tr>
+      <tr>
+        <td rowspan="4" class="plan-atencion-header">Atención 3:<br>Promoción del cuidado preventivo de la salud oral, visual y auditiva, hábitos de higiene personal e inmunización oportuna.</td>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Acciones y descripción:</strong></p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">1. Estación pedagógica de autocuidado &#x27;Guardianes de nuestra sonrisa y cuerpo limpio&#x27;:</strong> Se transformará un rincón del aula en una estación interactiva de autocuidado mediante el juego simbólico, utilizando espejos de mano, relojes de arena de dos minutos, macromodelos dentales, lupas didácticas y un cuento sonorizado sobre cómo el agua, el jabón y el cepillado protegen el organismo. Las niñas y los niños explorarán con lupas simulaciones ilustradas de bacterias en dientes y manos, comprendiendo por qué el aseo diario previene infecciones respiratorias, gastrointestinales y caries. Seguidamente, practicarán en pequeños turnos la técnica de lavado de manos en el lavamanos siguiendo una secuencia pictográfica y ensayarán sobre los modelos dentales el barrido correcto de encías y muelas, reforzando la regla de uso estrictamente personal de cepillos, toallas y vasos. Como producto pedagógico, elaborarán un calendario semanal de autocuidado con sellos de colores para llevar a casa, acompañado de una circular que invita a las familias a gestionar los controles odontológicos de acuerdo con las orientaciones del servicio de salud y revisar el carné de vacunación para verificar si se requieren dosis pendientes.</p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">2. Estación multisensorial &#x27;Escucho con atención, miro con cuidado&#x27;:</strong> La experiencia se organizará mediante dos circuitos sensoriales rotativos para explorar los sentidos de la vista y el oído y conversar sobre su cuidado; no constituyen pruebas de detección ni valoraciones visuales o auditivas. En el circuito auditivo (&#x27;El bosque de los ecos&#x27;), las niñas y los niños explorarán tubos sonoros, cajas de resonancia con semillas y grabaciones de paisajes sonoros del territorio, identificando intensidades suaves y fuertes para reflexionar sobre el daño que provocan los ruidos estridentes y la necesidad de no introducir objetos en los oídos. En el circuito visual (&#x27;Exploradores de formas y luces&#x27;), realizarán juegos de observación de láminas, colores y detalles a distintas distancias, sin interpretar sus respuestas como una prueba de agudeza visual, dialogando sobre el cuidado de los ojos al leer con buena luz, descansar de pantallas electrónicas y mantener las manos limpias. Posteriormente, crearán gafas y orejeras simbólicas con material reciclado expresando cómo cuidan sus sentidos. Al cierre, se orientará a las familias sobre la importancia de gestionar las valoraciones de optometría y audiometría de acuerdo con las indicaciones del servicio de salud y consultar cuando observen posibles dificultades sensoriales. (Ministerio de Educación Nacional, 2013).</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Recursos:</strong></p>
+<p>Espejos de mano, relojes de arena, macromodelos dentales y cepillos didácticos, lupas plásticas, secuencia pictográfica de lavado de manos, agua, jabón líquido, toallas desechables, tubos sonoros, cajas de semillas, grabaciones de sonidos ambientales, linternas de luz suave, láminas visuales, material reciclado para manualidades y circulares informativas sobre vacunación y tamizajes.</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Actores mediadores:</strong> Docente titular, docente en formación, auxiliar pedagógica, madres, padres, personas cuidadoras y personal de salud (odontología, optometría, audiología y enfermería de vacunación).</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Formas de participación:</strong></p>
+<ul class="plan-list"><li><strong>Docente titular:</strong> consolida las rutinas diarias de higiene en la jornada pedagógica y observa señales que puedan generar inquietud en la vida cotidiana y orienta a las familias para consultar al personal de salud, sin realizar tamizajes ni emitir diagnósticos.</li><li><strong>Docente en formación:</strong> implementa las estaciones lúdicas de prevención, orienta las prácticas cotidianas de autocuidado y sensibiliza sobre la protección de los órganos de los sentidos, sin realizar pruebas clínicas.</li><li><strong>Auxiliar pedagógica:</strong> acompaña los desplazamientos a zonas húmedas, supervisa el uso adecuado de insumos de aseo y apoya las rotaciones en los circuitos sensoriales.</li><li><strong>Familias y personas cuidadoras:</strong> acompañan el cepillado dental y la higiene diaria en el hogar, gestionan las consultas de odontología, optometría y audiometría y mantienen al día las vacunas.</li><li><strong>Profesionales de salud:</strong> realizan las valoraciones odontológicas, visuales y auditivas que correspondan, aplican las vacunas por personal autorizado y brindan atención oportuna ante los hallazgos.</li></ul></td>
+      </tr>
+      <tr>
+        <td rowspan="4" class="plan-atencion-header">Atención 4:<br>Reconocimiento respetuoso del propio cuerpo, prevención de riesgos en el entorno cotidiano y promoción del descanso saludable y la regulación emocional.</td>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Acciones y descripción:</strong></p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">1. Asamblea corporal &#x27;Mi cuerpo es mi territorio y merece respeto&#x27;:</strong> A partir de la narración de una historia ilustrada sobre el cuidado personal y los límites afectivos, se generará un círculo de palabra seguro y respetuoso donde las niñas y los niños identificarán las diferentes partes de su cuerpo nombrándolas con naturalidad y claridad acorde con su edad. Mediante siluetas ilustradas y tarjetas de situaciones cotidianas (un abrazo consentido de un amigo, una revisión médica en presencia de mamá o papá, un contacto que incomoda o asusta), los participantes clasificarán entre todos qué acciones generan bienestar y seguridad y cuáles requieren decir &#x27;no&#x27; con firmeza y buscar ayuda en personas adultas de confianza. Se explicará que todas las niñas y los niños tienen derecho a expresar sus emociones, hacer preguntas y ser escuchados con respeto, sin burlas ni señalamientos. Asimismo, se conversará sobre la prevención de accidentes domésticos y escolares (precaución con enchufes, sustancias químicas, escaleras y objetos cortopunzantes) mediante un juego de detección de riesgos en una maqueta o lámina grande del hogar. Finalmente, cada niña y niño realizará un autorretrato en técnica mixta destacando sus cualidades y el valor de cuidarse y ser cuidado. Si un niño o una niña comunica una situación que le preocupa, el adulto escuchará con calma, protegerá su bienestar y activará los protocolos y rutas institucionales; no investigará los hechos ni confrontará por cuenta propia a las personas involucradas.</p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">2. Ritual pedagógico &#x27;Viaje hacia la calma y el buen descanso&#x27;:</strong> La actividad iniciará con una secuencia de expresión corporal y danza libre con telas livianas al ritmo de melodías contrastantes, permitiendo que las niñas y los niños experimenten la energía del movimiento activo y luego reconozcan las señales corporales que indican la necesidad de pausa y recuperación. A continuación, recostados sobre tapetes en un ambiente ventilado y tenue, participarán en un ejercicio guiado de relajación progresiva y visualización creativa (&#x27;La nube del descanso&#x27;), aprendiendo técnicas sencillas de respiración para regular emociones intensas como el enojo o el miedo. Seguidamente, mediante tarjetas imantadas en el tablero, ordenarán los pasos de una rutina nocturna saludable (cena temprana, aseo personal, lectura de cuento, ausencia de pantallas y sueño reparador), analizando cómo dormir bien fortalece la memoria, el crecimiento y la alegría. Para finalizar, elaborarán un separador de libros con consejos de higiene del sueño para compartir en familia. (OPS, 2021).</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Recursos:</strong></p>
+<p>Cuento ilustrado sobre autocuidado y límites personales, siluetas corporales, tarjetas de situaciones cotidianas y prevención de riesgos en el hogar, lámina gigante de espacios domésticos, materiales de arte para autorretrato, telas livianas de colores, reproductor de audio con música suave, tapetes o colchonetas, tarjetas imantadas de rutinas nocturnas y cartulina para separadores de libros.</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Actores mediadores:</strong> Docente titular, docente en formación, auxiliar pedagógica, madres, padres, personas cuidadoras y equipos psicosociales o de salud cuando se requiera acompañamiento especializado.</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Formas de participación:</strong></p>
+<ul class="plan-list"><li><strong>Docente titular:</strong> garantiza un entorno educativo protector y empático, escucha sin juzgar las inquietudes de los niños y las niñas, protege su bienestar y activa los protocolos y rutas institucionales ante una posible vulneración, sin investigar ni confrontar por cuenta propia.</li><li><strong>Docente en formación:</strong> orienta las experiencias de reconocimiento corporal, prevención de accidentes, expresión emocional y relajación con lenguaje claro y respetuoso.</li><li><strong>Auxiliar pedagógica:</strong> apoya la adecuación segura de los espacios de movimiento y calma y acompaña de manera cercana las necesidades emocionales del grupo.</li><li><strong>Familias y personas cuidadoras:</strong> construyen, de acuerdo con sus condiciones y dinámicas familiares, rutinas de descanso saludables, adecuan espacios seguros en el hogar y dialogan con respeto sobre el cuidado del cuerpo.</li><li><strong>Profesionales de salud y psicosociales:</strong> ofrecen orientación técnica a familias y docentes y atienden de manera prioritaria cualquier situación que requiera apoyo especializado.</li></ul></td>
+      </tr>
+      <tr>
+        <td rowspan="4" class="plan-atencion-header">Atención 5:<br>Fortalecimiento de la participación infantil, la construcción democrática de convivencia, los vínculos afectivos y la apropiación del patrimonio cultural y comunitario.</td>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Acciones y descripción:</strong></p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">1. Tertulia intergeneracional &#x27;Nuestras raíces y acuerdos para vivir juntos&#x27;:</strong> Se invitará previamente a madres, padres, abuelas o personas cuidadoras a compartir con el grupo un saber cultural de su familia —como una ronda tradicional, una adivinanza, un relato oral, una artesanía o la historia de un objeto antiguo— fortaleciendo el diálogo intergeneracional, la memoria familiar y el sentido de pertenencia territorial. Tras este encuentro afectivo, se desarrollará un consejo infantil en el que cada niña y niño ejercerá su derecho a opinar y ser escuchado sobre cómo construir un ambiente de aula amable, inclusivo y libre de maltrato. A partir de sus propias palabras y propuestas, se redactará y decorará colectivamente el &#x27;Pacto de convivencia y buen trato&#x27;, utilizando estampado de manos y dibujos que representen el respeto mutuo, la escucha activa y la solidaridad. Finalmente, el pacto será exhibido en la entrada del aula para que familias y agentes educativos lo suscriban simbólicamente y, sobre todo, para que los acuerdos propuestos por las niñas y los niños se tengan en cuenta en las decisiones y relaciones cotidianas del aula.</p>
+<p class="plan-action-item"><strong style="color:var(--rose-deep);">2. Expedición comunitaria y juegos cooperativos &#x27;Tejiendo redes en nuestro territorio&#x27;:</strong> La experiencia comenzará organizando pequeños grupos heterogéneos mediante acertijos sobre lugares emblemáticos del barrio o municipio (biblioteca pública, parque, ludoteca o casa de la cultura). Si se realiza una salida, se contará previamente con autorización familiar, acompañamiento adulto suficiente, verificación de condiciones de seguridad y accesibilidad y medidas de cuidado durante los desplazamientos. Si no es posible salir, la experiencia se desarrollará en el aula mediante mapas, relatos, fotografías o la participación de actores comunitarios. Luego se propondrán tres desafíos cooperativos en un espacio seguro: &#x27;La cadena del equilibrio&#x27;, donde todo el equipo avanza unido trasladando una cuerda sin soltarse; &#x27;Rescate del patrimonio&#x27;, transportando en conjunto piezas ilustradas sobre una manta para armar un mapa gigante de los espacios culturales de su comunidad; y &#x27;Construcción colectiva&#x27;, diseñando con elementos naturales (ramas, piedras, hojas secas) una maqueta del parque ideal para la infancia. Durante los retos se promoverá la cooperación, el liderazgo compartido y la resolución dialogada de conflictos, garantizando que todos los niños y las niñas puedan participar de acuerdo con sus posibilidades e intereses. Como cierre, se socializará un directorio comunitario ilustrado con la programación gratuita de bibliotecas, museos y escenarios recreativos locales para incentivar su aprovechamiento en familia. (Ministerio de Educación Nacional, 2016, 2018).</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Recursos:</strong></p>
+<p>Objetos culturales, relatos o instrumentos aportados por las familias, pliego de cartulina resistente para el pacto de convivencia, pinturas lavables, pinceles, tarjetas de acertijos comunitarios, cuerdas, mantas amplias, piezas de mapa gigante del territorio, elementos naturales recolectados (hojas, ramas, piedras) y directorio cultural impreso para familias.</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Actores mediadores:</strong> Docente titular, docente en formación, auxiliar pedagógica, directivos docentes, madres, padres, abuelos, personas cuidadoras y gestores culturales o bibliotecarios comunitarios.</p></td>
+      </tr>
+      <tr>
+        <td class="plan-subfield-cell"><p><strong class="plan-field-label">Formas de participación:</strong></p>
+<ul class="plan-list"><li><strong>Docente titular y directivos:</strong> promueven la participación incidente de las niñas y los niños en la vida institucional y articulan visitas o alianzas con bibliotecas y centros culturales.</li><li><strong>Docente en formación:</strong> modera el consejo infantil y los juegos cooperativos, garantizando condiciones equitativas de expresión y protagonismo para todos los participantes.</li><li><strong>Auxiliar pedagógica:</strong> facilita la integración de los equipos durante los retos cooperativos y acompaña el cuidado del grupo en actividades comunitarias y apoya la aplicación de las medidas de seguridad y accesibilidad previstas.</li><li><strong>Familias y personas cuidadoras:</strong> comparten su patrimonio cultural y memoria familiar en el aula, refuerzan los acuerdos de convivencia y participan en las experiencias comunitarias y acompañan a sus hijos en el aprovechamiento seguro de los espacios culturales y recreativos.</li><li><strong>Actores comunitarios y culturales:</strong> facilitan, cuando sea posible, el acceso seguro e inclusivo a bibliotecas, ludotecas y parques como escenarios de formación ciudadana, recreación e identidad infantil.</li></ul></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
       </div>
+
     </section>
 
   </main>
@@ -3397,7 +3499,7 @@
       infoModal.classList.add('open');
     }
 
-    // 8. Reproducción de Video en Modal Interactivo con manejo de protocolo local (Error 153)
+    // 8. Reproducción de Video en Modal Interactivo con solución definitiva a Error 153 (file:// vs web)
     function openVideoModal(videoId, title, author, desc) {
       const modalBox = document.querySelector('.modal-box');
       modalBox.classList.add('lightbox-mode');
@@ -3405,38 +3507,72 @@
 
       modalContent.innerHTML = `
         <div class="lightbox-modal-content">
-          <span class="card-badge">${author ? author : 'Recurso Audiovisual • Documental'}</span>
+          <span class="card-badge">${author ? author : 'Recurso Audiovisual • Documental Oficial'}</span>
           <h2 style="font-family:'Playfair Display',serif; color:var(--rose-deep); margin:0.4rem 0 0.4rem; font-size:1.35rem;">${title}</h2>
           ${desc ? `<p style="color:var(--text-muted); font-size:0.88rem; line-height:1.5; margin-bottom:0.85rem;">${desc}</p>` : ''}
 
-          ${isFileProtocol ? `
-            <div style="background:#fff1f2; border:1px solid #fecdd3; border-radius:14px; padding:0.9rem 1.2rem; margin-bottom:1rem; text-align:left; display:flex; align-items:flex-start; gap:0.75rem;">
-              <span style="font-size:1.4rem; line-height:1;">⚠️</span>
-              <div style="font-size:0.85rem; color:#881337; line-height:1.5;">
-                <strong>Nota sobre visualización local (Error 153):</strong> Debido a las políticas de seguridad de YouTube, la reproducción incrustada en navegadores está bloqueada cuando se abre el archivo directamente desde el disco duro (protocolo <code>file://</code>). Puedes ver el video sin problemas haciendo clic en el botón rojo <strong>"Mirar en YouTube"</strong> a continuación. Cuando el sitio se sube a internet o a un servidor web, el reproductor incrustado funciona automáticamente.
-              </div>
-            </div>
-          ` : ''}
+          <div id="video-player-container">
+            ${isFileProtocol ? `
+              <div class="custom-video-screen" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:18px; background:#0a0a0c; box-shadow:0 14px 40px rgba(0,0,0,0.35); border:1px solid var(--pink-200); cursor:pointer;" onclick="window.open('https://youtube.com/watch?v=${videoId}', '_blank')" title="Clic para reproducir en YouTube">
+                <img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg" alt="${title}" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0.88; transition:transform 0.4s ease, opacity 0.4s ease;">
+                <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.6) 100%); display:flex; flex-direction:column; justify-content:space-between; padding:1.25rem;">
+                  <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <span style="background:rgba(255,0,0,0.92); color:white; font-size:0.75rem; font-weight:700; padding:0.3rem 0.75rem; border-radius:50px; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 2px 8px rgba(255,0,0,0.5);">YouTube Oficial</span>
+                    <span style="color:#f1f5f9; font-size:0.8rem; background:rgba(0,0,0,0.65); padding:0.25rem 0.65rem; border-radius:6px; font-weight:600;">⏱️ 24:18 min</span>
+                  </div>
+                  
+                  <div style="text-align:center;">
+                    <div class="video-play-button" style="width:72px; height:72px; background:#ff0000; border-radius:50%; margin:0 auto; display:flex; align-items:center; justify-content:center; box-shadow:0 0 30px rgba(255,0,0,0.7); transition:all 0.3s ease;">
+                      <svg width="34" height="34" viewBox="0 0 24 24" fill="white" style="margin-left:4px;">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </div>
+                    <p style="color:white; font-weight:700; font-size:1.05rem; margin-top:0.75rem; text-shadow:0 2px 6px rgba(0,0,0,0.9);">
+                      ▶️ Reproducir documental en YouTube
+                    </p>
+                    <span style="color:#cbd5e1; font-size:0.82rem; background:rgba(0,0,0,0.45); padding:0.2rem 0.6rem; border-radius:4px; display:inline-block; margin-top:0.25rem;">Máxima resolución • Sin restricciones de reproductor</span>
+                  </div>
 
-          <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:16px; background:#000; box-shadow:0 10px 35px rgba(0,0,0,0.3); border:1px solid var(--pink-200);">
-            <iframe 
-              src="https://www.youtube.com/embed/${videoId}?rel=0&enablejsapi=1" 
-              title="${title}" 
-              style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" 
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
+                  <div style="font-size:0.8rem; color:#cbd5e1; text-align:left; background:rgba(0,0,0,0.5); padding:0.4rem 0.75rem; border-radius:8px;">
+                    🌊 <em>Prácticas de crianza tradicionales y saberes ancestrales del Pacífico colombiano</em>
+                  </div>
+                </div>
+              </div>
+
+              <div style="background:#fff1f2; border:1px solid #fecdd3; border-radius:12px; padding:0.85rem 1.15rem; margin-top:0.95rem; text-align:left; display:flex; align-items:flex-start; gap:0.75rem;">
+                <span style="font-size:1.35rem; line-height:1;">ℹ️</span>
+                <div style="font-size:0.84rem; color:#881337; line-height:1.5;">
+                  <strong>Visualización local (Protocolo file://):</strong> YouTube no permite la reproducción dentro de marcos incrustados cuando se abre un archivo HTML directamente desde las carpetas del computador (genera el código de seguridad <em>Error 153</em>). Al hacer clic en el botón de reproducción o en <strong>"Mirar en YouTube"</strong>, el video se abre de inmediato en YouTube con total fluidez.
+                  <br><span style="font-size:0.78rem; color:#6b4c5b;">Al alojar el sitio en la web o en un servidor local (ej. Live Server, localhost, GitHub Pages), el reproductor incrustado se activa automáticamente.</span>
+                </div>
+              </div>
+            ` : `
+              <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:16px; background:#000; box-shadow:0 10px 35px rgba(0,0,0,0.3); border:1px solid var(--pink-200);">
+                <iframe 
+                  src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&enablejsapi=1" 
+                  title="${title}" 
+                  style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" 
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            `}
           </div>
 
-          <div style="display:flex; justify-content:center; gap:0.75rem; margin-top:1.1rem; flex-wrap:wrap; align-items:center;">
-            <a href="https://youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="background:#ff0000; text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; padding:0.65rem 1.4rem; font-size:0.9rem; font-weight:700; box-shadow:0 4px 14px rgba(255,0,0,0.35);">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display:inline-block; vertical-align:middle;">
+          <div style="display:flex; justify-content:center; gap:0.75rem; margin-top:1.15rem; flex-wrap:wrap; align-items:center;">
+            <a href="https://youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="background:#ff0000; text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; padding:0.7rem 1.5rem; font-size:0.92rem; font-weight:700; box-shadow:0 4px 14px rgba(255,0,0,0.35);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="white" style="display:inline-block; vertical-align:middle;">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
-              <span>Mirar el video en YouTube (Sin Restricciones) ↗</span>
+              <span>Mirar Documental en YouTube ↗</span>
             </a>
-            <button onclick="closeModal()" class="btn-secondary" style="padding:0.65rem 1.25rem; font-size:0.88rem;">
+            ${isFileProtocol ? `
+              <button onclick="forceEmbedVideo('${videoId}', '${title}')" class="btn-secondary" style="padding:0.68rem 1.15rem; font-size:0.83rem; background:#f8fafc; border:1px solid #cbd5e1; color:#475569;" title="Intentar cargar marco incrustado">
+                🔄 Intentar incrustar aquí
+              </button>
+            ` : ''}
+            <button onclick="closeModal()" class="btn-secondary" style="padding:0.7rem 1.4rem; font-size:0.88rem;">
               Cerrar
             </button>
           </div>
@@ -3445,14 +3581,29 @@
       infoModal.classList.add('open');
     }
 
+    function forceEmbedVideo(videoId, title) {
+      const container = document.getElementById('video-player-container');
+      if (container) {
+        container.innerHTML = `
+          <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:16px; background:#000; box-shadow:0 10px 35px rgba(0,0,0,0.3); border:1px solid var(--pink-200);">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&enablejsapi=1" 
+              title="${title}" 
+              style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" 
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        `;
+      }
+    }
+
     function closeModal() {
       infoModal.classList.remove('open');
-      // Detener de inmediato cualquier video o audio en reproducción
       setTimeout(() => {
-        if (!infoModal.classList.contains('open')) {
-          modalContent.innerHTML = '';
-        }
-      }, 250);
+        modalContent.innerHTML = '';
+      }, 300);
     }
 
     if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
